@@ -49,3 +49,11 @@ pip3 install boto3
 yum install -y yum-utils
 yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
 yum -y install terraform
+# install kubectl
+curl -LO "https://dl.k8s.io/release/v1.26.1/bin/linux/amd64/kubectl"
+chmod +x kubectl
+sudo mv kubectl /usr/local/bin/
+# install eksctl 
+curl -LO "https://github.com/weaveworks/eksctl/releases/download/v0.157.0/eksctl_Linux_amd64.tar.gz"
+tar -xzf eksctl_Linux_amd64.tar.gz -C /tmp
+sudo mv /tmp/eksctl /usr/local/bin/
