@@ -1,7 +1,7 @@
 mykey = "faozilkey"
-ami = "ami-0f409bae3775dc8e5"    # Amazon Linux 2 AMI
+ami = "ami-03972092c42e8c0ca"    # Amazon Linux 2 AMI
 region = "us-east-1"
-instance_type = "t3a.large"     #  If ıt dosen't run, do it t3a.large.                          
+instance_type = "t3a.large"                            
 jenkins_server_secgr = "microservices-jenkins-server-secgr"
 jenkins-server-tag = "Microservices Jenkins Server"
 jenkins-profile = "microservices-jenkins-server-profile"
